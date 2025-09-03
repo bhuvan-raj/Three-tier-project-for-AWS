@@ -1,5 +1,8 @@
 # 🏗️ 3-Tier AWS Lab (HA + Scale + Security)
 
+
+![Alt Text](assets/h1.png)
+
 **Stack:** CloudFront (+WAF) → S3 (static) & Web-ALB → Web ASG (Nginx) → App-ALB (internal) → App ASG (Apache/PHP) → RDS MySQL
 **Secrets:** AWS Secrets Manager
 **Monitoring:** Amazon CloudWatch (+ SNS)
@@ -559,4 +562,3 @@ Create alarms that **notify** `three-tier-alerts`:
 
 ---
 
-If you want, I can also give you **Terraform stubs** for the tricky parts (CloudFront with two origins/behaviors, OAC, and the bucket policy) so your students can automate this end-to-end.
